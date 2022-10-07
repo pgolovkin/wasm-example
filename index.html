@@ -6,9 +6,10 @@
 </head>
 <body>
 <script type="module">
-    import init, { greet } from "./pkg/wasm_example.js";
+    import init, { greet, Person } from "./pkg/wasm_example.js";
     init().then(() => {
         console.log(greet("World"));
+        console.log(new Person(33, "Pavel").info());
     });
 </script>
 </body>
